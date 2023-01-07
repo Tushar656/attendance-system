@@ -1,0 +1,88 @@
+.Home{
+    display: flex;
+    height: 100vh;
+}
+.leftHome{
+    flex: 2;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: -4px 0px 30px 0px rgba(84,84,84,1);
+    -moz-box-shadow: -4px 0px 30px 0px rgba(84,84,84,1);
+    box-shadow: -4px 0px 30px 0px rgba(84,84,84,1);
+    z-index: 2;
+}
+.topLeftHome{
+    padding-left: 40px;
+    margin-top: 10px;
+}
+.listItem{
+    margin: 15px 0px;
+    font-size: 18px;
+    width: 80%;
+    padding: 10px 25px;
+    width: 100%;
+    border-radius: 10px;
+}
+.listItem:hover{
+    background-color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+
+
+.rightHome{
+    flex: 8;
+
+}
+.topBar{
+    background-color: rgb(41, 41, 41);
+    height: 50px;
+    width: calc(100% + 20px);
+    display: flex;
+    justify-content: end;
+    align-items:flex-end;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    z-index: 1;
+    margin-left: -20px;
+}
+.maincontainor{
+    padding: 30px;
+    background-color: rgb(243, 243, 243);
+    width: 100%;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .Home{
+        flex-direction: column;
+    }
+    .topLeftHome{
+        background-color: rgb(41, 41, 41);
+        color: white;
+        padding: 7px;
+    }
+    .bottomLeftHome{
+        display: flex;
+    } 
+    .listItem{
+        margin: 0px;
+        width: auto;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .rightHome .topBar{
+        visibility: hidden;
+    }
+    .maincontainor{
+        padding: 30px 5px;
+        font-size: 14px;
+    }
+}
